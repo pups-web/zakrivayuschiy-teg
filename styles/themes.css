@@ -1,0 +1,59 @@
+/* В этом файле вы опишете значения переменных в разных цветовых схемах.
+Придерживайтесь такого именования классов:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+*/
+:root.theme-dark {
+    --font-weight-card-title: 785;
+    --font-weight-card-text: 400;
+    --button-color-main:#00CC14 ;
+    --button-color-second:#000 ;
+    --accent-color:#00CC14 ;
+    --background-color: #000;
+    --heart-contour-color: #00CC14;
+    --heart-filling-color: red;
+    --heart-body-color: #00CC14;
+    --background-image: repeating-linear-gradient(
+        to left,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+}
+
+:root.theme-light {
+    --font-weight-card-title: 700;
+    --font-weight-card-text: 400;
+    --accent-color:#000;
+    --button-color-main:#fff;
+    --button-color-second:#fff;
+    --background-color: #FFF;
+    --heart-contour-color: #000;
+    --heart-filling-color: red;
+    --heart-body-color: #000;
+    --background-image:  repeating-linear-gradient(
+        to left,
+        #d3d3d3 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-weight-card-title: 700;
+        --font-weight-card-text: 400;
+        --accent-color:#000 ;
+        --background-color: #000;
+        --background-image: repeating-linear-gradient(
+            to left,
+            #000 0 2px,
+            transparent 2px 4px
+          ),
+          repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+          linear-gradient(to bottom, #007f0c, #004306);
+    }
+  }
