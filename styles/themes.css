@@ -42,7 +42,7 @@
       linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: theme-dark) {
     :root {
       --font-weight-card-title: 700;
       --font-weight-card-text: 400;
@@ -62,3 +62,4 @@
         linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     }
   }
+  
